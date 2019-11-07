@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animation</title>
+    <style>
+    @keyframes example {
+        from {height: 300px;}
+        to {height: 900px;}
+      }
+      
+     img {
+        animation: example 2s forwards;
+        animation-iteration-count: infinite; 
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+     }
+    body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+
+}
+
+p {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, rgb(255, 0, 0), #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+}
+    </style>
+  </head>
+  <body>
+    <p>
+      I Am Beautiful
+    </p>
+    <img src="Face/2018-04-24_11.45.37.jpg" alt="Picture of me" class="center">
+  </body>
+</html>

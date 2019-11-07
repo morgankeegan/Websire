@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Ginger Face</title>
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="Fncy.css">
+
+    <script>
+        var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+        var x = setInterval(function() {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+
+        function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+      window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+      for (i = 0; i < dropdowns.length; i++) {
+         var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+        </script>
+
+  </head>
+  <body>
+      <h2 id="demo"></h2>
+      <h2>It's Happening, You Can't Stop IT!!!</h2>
+
+      <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Links On this site</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="Homepage.html"> Homepage</a>
+            <a href="Google.com">CRASH</a>
+            <a href="Cooking.html">My Cookbook</a>
+          </div>
+        </div>
+  <h1>
+      My BEAUTIFUL Face
+  </h1>
+  
+  <img src="Face/Capture1.png" alt="Picture of me" class="center">
+  <p>This i feel represents my more imperialistic side. That of course meaning I need to INVADE FOR OIL!</p>
+  <br>
+  <img src="Face/Capture2.png" alt="Picture of me" class="center">
+  <p>I mean, its nic cage. </p>
+  <img src="Face/Capture3.png" alt="Picture of me" class="center">
+  <p> Somtimes you just need to build a wall, ya know</p>
+  <img src="Face/Capture4.png" alt="Picture of me" class="center">
+  <p>ARRRRRRRRRRRRRRRRRR</p>
+  <img src="Face/Capture5.png" alt="Picture of me" class="center">
+  <p> I mean, upside down is fun to?</p>
+  <img src="Face/Capture6.png" alt="Picture of me" class="center">
+  <p>Boo! ha, i have no face</p>
+  <img src="Face/Capture7.png" alt="Picture of me" class="center"  height="450">
+  <p>Im Sad and smaller</p>
+  <img src="Face/Capture8.png" alt="Picture of me" class="center">
+  <p>Help! I didnt shave this morning!</p>
+  <img src="Face/Capture9.png" alt="Picture of me" class="center">
+  <p> Nig cage 2</p>
+  <img src="Face/Capture10.png" alt="Picture of me" class="center">
+  <p>*cool shade slide onto face*</p>
+  <img src="Face/Capture11.png" alt="Picture of me" class="center">
+  <p>I was feeling a little <i>French</i>.</p>
+  <img src="Face/Capture12.png" alt="Picture of me" class="center">
+  <p>Use <a href="https://duckduckgo.com/">this browser</a> for the best privicy!</p>
+  <img src="Face/Capture13.png" alt="Picture of me" class="center">
+  <p>The principle of Service High</p>
+  <img src="Face/Capture14.png" alt="Picture of me" class="center">
+  <p>When you see your self.</p>
+  <img src="Face/Capture15.png" alt="Picture of me" class="center">
+  <p>When you just MMMMMMMMMMMMMMM</p>
+  <img src="Face/Capture16.png" alt="Picture of me" class="center">
+  <p>Im feeling a bit... spacey today</p>
+  <img src="Face/Capture17.png" alt="Picture of me" class="center">
+  <p>You ever just have a rainy day</p>
+  <img src="Face/Capture18.png" alt="Picture of me" class="center">
+  <p> Gata go Fast</p>
+  <img src="Face/Capture19.png" alt="Picture of me" class="center">
+  <p>Feeling a little... Demonic</p>
+  <img src="Face/Capture20.png" alt="Picture of me" class="center">
+  <p>Somthing seems... Afoot</p>
+  <img src="Face/NicholasCageFlossing.gif" alt="Picture of me" class="center">
+  <h1>More Coming Soon!</h1>
+  </body>
+</html> 
